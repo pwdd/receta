@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: receta_development
+  username: postgres
+  password: pwdd
+
+test:
+  <<: *default
+  database: receta_test
+  username: postgres
+  password: pwdd
+
+production:
+  <<: *default
+  database: receta_production
+  username: receta
+  password: <%= ENV['RECETA_DATABASE_PASSWORD'] %>
