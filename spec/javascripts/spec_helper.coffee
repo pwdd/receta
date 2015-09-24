@@ -4,10 +4,5 @@
 #= require angular-mocks/angular-mocks
 
 beforeEach ->
-  jasmine.addMatchers toEqualData: (util, customEqualityTesters) ->
-    {
-      compare: (actual, expected) ->
-        result = {}
-        result.pass = angular.equals(actual, expected)
-        result
-    }
+  this.addMatchers
+    toEqualData: (expected)-> return angular.equals(this.actual, expected)
