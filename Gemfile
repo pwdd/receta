@@ -8,7 +8,9 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'bower-rails'
+gem 'angular-rails-templates'
 gem 'foreman'
+gem 'sprockets', '2.12.3'
 
 group :production, :staging do
   gem 'rails_12factor'
