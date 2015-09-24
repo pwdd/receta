@@ -26,6 +26,8 @@ group :development, :test do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'selenium-webdriver'
+  gem 'teaspoon-jasmine'
+  gem 'phantomjs'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
